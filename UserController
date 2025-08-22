@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class UserController extends Controller
+{
+    
+    public function index()
+    {
+        $title = "Welcome to Laravel";
+        $users = ["John", "Jane", "Mark"];
+
+        return view('home', compact('title', 'users'));
+    
+       
+    }
+
+    
+ 
+
+
+}
